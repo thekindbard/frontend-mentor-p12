@@ -17,29 +17,24 @@
 --desaturated-blue: hsl(235, 45%, 61%);
 --pale-blue: hsl(236, 100%, 87%);
 }
-
 body {
     font-size: 18px;
     color: white;
     background-color: var(--very-dark-blue);
     font-family: Rubik;
 }
-
 main {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 section {
     height: 100%;
 }
-
 .container {
     display: flex;
     align-items: center;
-    /* height: 70%; */
     min-height: 500px;
     margin: auto;
 }
@@ -48,6 +43,7 @@ section {
     background-color: var(--dark-blue);
     border-radius: 1em;
     margin-right: 10px;
+    padding-bottom: 5px;
 }
 .loading {
     visibility: hidden;
@@ -103,7 +99,7 @@ section {
     position: relative;
 }
 .timer__container {
-    /* width: 200px; */
+    width: 200px;
     cursor: pointer;
 }
 .timer__bg {
@@ -172,6 +168,9 @@ section {
     }
     .container {
         align-items: flex-start;
+    }
+    .timer__container {
+        width: auto;
     }
     .timer__container-top {
         padding-bottom: 0px;
